@@ -1,0 +1,24 @@
+﻿.form-box-container{
+    width:100%;
+    padding-top:30px;
+}
+
+.form-box {
+    width: 90%;
+    margin-top:30px;
+    margin-left: 5%;
+    height: auto;
+    padding: 20px;
+}
+
+.form-content{
+    padding: 10px;
+}
+
+@media (min-width: 850px)
+{
+    .form-box {
+        width: 50%;
+        margin-left:25%;
+    }
+}
