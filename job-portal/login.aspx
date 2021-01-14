@@ -2,6 +2,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="style/form.css" rel="stylesheet" />
+    <script src="script/form.js"></script>
     <title>Login</title>
 </asp:Content>
 
