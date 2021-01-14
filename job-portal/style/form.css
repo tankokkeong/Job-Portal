@@ -15,8 +15,11 @@
     padding: 10px;
 }
 
-@media (min-width: 850px)
-{
+.select2{
+    width:100%!important;
+}
+
+@media (min-width: 850px) {
     .form-box {
         width: 50%;
         margin-left:25%;

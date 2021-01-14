@@ -61,7 +61,7 @@
 
                     <div class="form-group">
                         <label for="exampleInputPassword1" class="text-light">Country</label>
-                        <asp:TextBox ID="country" runat="server" CssClass="form-control" placeholder="ex: Malaysia"></asp:TextBox>
+                        <asp:DropDownList ID="signup_country" runat="server" CssClass="form-control"></asp:DropDownList>
                     </div>
 
                     <div class="form-group">
@@ -73,22 +73,23 @@
 
                     <div class="form-group">
                         <label for="exampleInputPassword1" class="text-light">Skill Sets</label>
-                        <asp:TextBox ID="TextBox3" runat="server" CssClass="form-control" placeholder="ex: Selangor"></asp:TextBox>
+                       <asp:DropDownList ID="skill_sets" runat="server" CssClass="skill-sets" multiple="multiple">          
+                        </asp:DropDownList>
+
+                        <script>
+                            // In your Javascript (external .js resource or <script> tag)
+                            $(document).ready(function () {
+                                $(".skill-sets").select2({
+                                    tags: true
+                                });
+                            });
+                        </script>
                     </div>
-
-                    <%--<select class="form-control js-example-tags" multiple="multiple">
-                      <option selected="selected">orange</option>
-                      <option>white</option>
-                      <option selected="selected">purple</option>
-                    </select>--%>
-
                     
 
                     <div class="form-group">
                         <label for="exampleInputPassword1" class="text-light">Preferred Industry</label>
-                        <asp:DropDownList ID="prefer_industry" runat="server" CssClass="form-control prefer-industry" multiple="multiple">
-                            <asp:ListItem>IT</asp:ListItem>
-                            <asp:ListItem>Software</asp:ListItem>
+                        <asp:DropDownList ID="prefer_industry" runat="server" CssClass="prefer-industry" multiple="multiple">          
                         </asp:DropDownList>
 
                         <script>
@@ -103,9 +104,7 @@
 
                     <div class="form-group">
                         <label for="exampleInputPassword1" class="text-light">Preferred Functions</label>
-                         <asp:DropDownList ID="prefer_functions" runat="server" CssClass="form-control prefer-functions" multiple="multiple">
-                            <asp:ListItem>IT</asp:ListItem>
-                            <asp:ListItem>Software</asp:ListItem>
+                         <asp:DropDownList ID="prefer_functions" runat="server" CssClass="prefer-functions" multiple="multiple">
                         </asp:DropDownList>
 
                         <script>

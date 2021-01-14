@@ -78,13 +78,13 @@ namespace job_portal
         protected global::System.Web.UI.WebControls.TextBox current_location;
 
         /// <summary>
-        /// country control.
+        /// signup_country control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox country;
+        protected global::System.Web.UI.WebControls.DropDownList signup_country;
 
         /// <summary>
         /// expeirence_dropdown control.
@@ -96,13 +96,13 @@ namespace job_portal
         protected global::System.Web.UI.WebControls.DropDownList expeirence_dropdown;
 
         /// <summary>
-        /// TextBox3 control.
+        /// skill_sets control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox3;
+        protected global::System.Web.UI.WebControls.DropDownList skill_sets;
 
         /// <summary>
         /// prefer_industry control.
